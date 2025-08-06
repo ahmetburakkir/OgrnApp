@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // 🔑 Google Gemini API key
-const genAI = new GoogleGenerativeAI("AIzaSyBiLvQfqGFQiK6o0awbyJnlTNX-HLS_fMk");
+const genAI = new GoogleGenerativeAI("YOUR_API_KEY_HERE");
 
 // Soruları getir
 app.get("/questions", (req, res) => {

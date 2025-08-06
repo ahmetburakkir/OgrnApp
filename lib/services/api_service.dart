@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String baseUrl = "http://192.168.1.94:3000"; // kendi PC IP'n
+  static const String baseUrl = "http://YOUR_PC_IP:3000"; // kendi PC IP'n
 
   static Future<List<dynamic>> getQuestions() async {
     final response = await http.get(Uri.parse('$baseUrl/questions'));
