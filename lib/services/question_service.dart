@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/question_model.dart';
 
 class QuestionService {
-  static const String baseUrl = "http://192.168.56.1:3000"; // mobilde test edeceksen IP'yi değiştir
+  static const String baseUrl = "http://YOUR_PC_IP:3000"; // mobilde test edeceksen IP'yi değiştir
 
   Future<List<Question>> fetchQuestions() async {
     final response = await http.get(Uri.parse('$baseUrl/questions'));
